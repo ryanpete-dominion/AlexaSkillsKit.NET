@@ -48,7 +48,8 @@ namespace AlexaSkillsKit.Json
                     break;
                 case "IntentRequest":
                     request = new IntentRequest(requestId, timestamp, 
-                        Intent.FromJson(requestJson.Value<JObject>("intent")));
+                        Intent.FromJson(requestJson.Value<JObject>("intent")),
+                        requestJson.Value<string>("dialogState"));
                     break;
                 case "SessionStartedRequest":
                     request = new SessionStartedRequest(requestId, timestamp);

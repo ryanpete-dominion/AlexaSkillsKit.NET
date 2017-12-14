@@ -1,0 +1,18 @@
+﻿{
+  "resolutionsPerAuthority": [
+    {
+      "authority": "test.resolutionAuthority",
+      "status": {
+        "code": "TEST_STATUSCODE"
+      },
+      "values": [
+        {
+          "value": {
+            "id": "Test.ResolutionValueId",
+            "name" :  "Test.ResolutionValueName"
+          }
+        }
+      ]
+    }
+  ]
+}

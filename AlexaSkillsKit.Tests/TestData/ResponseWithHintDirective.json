@@ -1,0 +1,14 @@
+﻿{
+  "response": {
+    "shouldEndSession": false,
+    "directives": [
+      {
+        "type": "Hint",
+        "hint": {
+          "type": "PlainText",
+          "text": "your hint text"
+        }
+      }
+    ]
+  }
+}

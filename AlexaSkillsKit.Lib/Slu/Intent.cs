@@ -24,9 +24,12 @@ namespace AlexaSkillsKit.Slu
 
             return new Intent {
                 Name = json.Value<string>("name"),
+                ConfirmationStatus = json.Value<string>("confirmationStatus"),
                 Slots = slots
             };
         }
+
+        public virtual string ConfirmationStatus { get; set; }
 
         public virtual string Name {
             get;
@@ -35,7 +38,7 @@ namespace AlexaSkillsKit.Slu
 
         public virtual Dictionary<string, Slot> Slots {
             get;
-            set;
-        }
+            private set;
+        } = new Dictionary<string, Slot>();
     }
 }

@@ -1,0 +1,32 @@
+﻿{
+  "response": {
+    "shouldEndSession": false,
+    "directives": [
+      {
+        "type": "Display.RenderTemplate",
+        "template": {
+          "type": "BodyTemplate3",
+          "textContent": {
+            "primaryText": {
+              "type": "string",
+              "text": "Hello world"
+            }
+          },
+          "image": {
+            "contentDescription": "TestImageBodyTemplate3",
+            "sources": [
+              {
+                "url": "urlplaceholder",
+                "widthPixels": 200,
+                "heightPixels": 100
+              }
+            ]
+          },
+          "token": "bodytemplate3token",
+          "backButton": "VISIBLE",
+          "title": "Body Template Title"
+        }
+      }
+    ]
+  }
+}

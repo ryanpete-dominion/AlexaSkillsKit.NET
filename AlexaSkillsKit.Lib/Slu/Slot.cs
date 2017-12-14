@@ -2,6 +2,7 @@
 
 using System;
 using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
 
 namespace AlexaSkillsKit.Slu
 {
@@ -15,7 +16,8 @@ namespace AlexaSkillsKit.Slu
         public static Slot FromJson(JObject json) {
             return new Slot {
                 Name = json.Value<string>("name"),
-                Value = json.Value<string>("value")
+                Value = json.Value<string>("value"),
+                Resolutions = Resolutions.FromJson(json.Value<JObject>("resolutions"))
             };
         }
         
@@ -27,5 +29,7 @@ namespace AlexaSkillsKit.Slu
             get;
             set;
         }
+
+        public virtual Resolutions Resolutions { get; set; }
     }
 }

@@ -2,6 +2,9 @@
 
 using System;
 using AlexaSkillsKit.UI;
+using System.Collections.Generic;
+using AlexaSkillsKit.Directive;
+using Newtonsoft.Json;
 
 namespace AlexaSkillsKit.Speechlet
 {
@@ -26,5 +29,8 @@ namespace AlexaSkillsKit.Speechlet
             get;
             set;
         }
+
+        [JsonProperty("directives", NullValueHandling = NullValueHandling.Ignore)]
+        public IList<IDirective> Directives { get; set; } = new List<IDirective>();
     }
 }

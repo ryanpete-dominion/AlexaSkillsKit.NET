@@ -1,0 +1,20 @@
+﻿{
+  "name": "TestSlot",
+  "value": "TestSlotValue",
+  "resolutions": {
+    "resolutionsPerAuthority": [
+      {
+        "authority": "test.resolutionAuthority",
+        "status": { "Code": "TEST_STATUSCODE" },
+        "values": [
+          {
+            "value": {
+              "id": "Test.ResolutionValueId",
+              "name": "Test.ResolutionValueName"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

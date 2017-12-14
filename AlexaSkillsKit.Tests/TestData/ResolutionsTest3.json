@@ -1,0 +1,10 @@
+﻿{
+  "resolutionsPerAuthority": [
+    {
+      "authority": "test.resolutionAuthority",
+      "status": {
+        "code": "TEST_STATUSCODE"
+      }
+    }
+  ]
+}

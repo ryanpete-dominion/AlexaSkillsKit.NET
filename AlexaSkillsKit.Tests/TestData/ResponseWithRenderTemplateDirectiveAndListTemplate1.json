@@ -1,0 +1,72 @@
+﻿{
+  "response": {
+    "shouldEndSession": false,
+    "directives": [
+      {
+        "type": "Display.RenderTemplate",
+        "template": {
+          "type": "ListTemplate1",
+          "listItems": [
+            {
+              "token": "item1",
+              "textContent": {
+                "primaryText": {
+                  "type": "PlainText",
+                  "text": "Item 1"
+                }
+              },
+              "image": {
+                "sources": [
+                  {
+                    "url": "placeholder1",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                  }
+                ]
+              }
+            },
+            {
+              "token": "item2",
+              "textContent": {
+                "primaryText": {
+                  "type": "PlainText",
+                  "text": "Item 2"
+                }
+              },
+              "image": {
+                "sources": [
+                  {
+                    "url": "placeholder2",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                  }
+                ]
+              }
+            },
+            {
+              "token": "item3",
+              "textContent": {
+                "primaryText": {
+                  "type": "PlainText",
+                  "text": "Item 3"
+                }
+              },
+              "image": {
+                "sources": [
+                  {
+                    "url": "placeholder3",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                  }
+                ]
+              }
+            }
+          ],
+          "token": "listtemplate1token",
+          "backButton": "VISIBLE",
+          "title": "List Template 1 Title"
+        }
+      }
+    ]
+  }
+}
